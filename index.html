@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aria's Dev Diary | Day 5 CSS Journey</title>
+  
+  <!-- Linking my external CSS file! -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts for that clean, modern aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="sparkle">✨</span> <span class="logo-text">devgirl.logs()</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Journal</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-badge">🚀 Milestone: Day 5 Completed</div>
+    <h1>Documenting my journey from <br><span class="highlight">blank screen</span> to full-stack.</h1>
+    <p class="subtitle">Just a girl falling in love with clean code, coffee, and CSS styling. Here is my real-time progress log!</p>
+    
+    <div class="interactive-widget">
+      <button id="cheer-btn" class="glow-btn">💖 Send a Cheer (<span id="cheer-count">24</span>)</button>
+      <p class="widget-note">Click to support my coding journey!</p>
+    </div>
+  </section>
+
+  <!-- Blog Grid Section -->
+  <main class="blog-container">
+    <h2 class="section-title">The Learning Logs</h2>
+    
+    <div class="grid-layout">
+      
+      <!-- Day 1 Post -->
+      <article class="blog-card">
+        <div class="card-header">
+          <span class="tag html-tag">HTML5</span>
+          <span class="date">Day 01</span>
+        </div>
+        <h3>Hello World & What Even is a `<div>`?</h3>
+        <p>Started my web dev journey today! Learned about basic page structure, headings, paragraphs, and why everyone makes a fuss about closing their tags. It looked like a 1990s document, but seeing my words on a local server felt magical.</p>
+        <div class="card-footer">
+          <span class="read-time">⏳ 2 min read</span>
+          <a href="#" class="read-more">Read Entry →</a>
+        </div>
+      </article>
+
+      <!-- Day 3 Post -->
+      <article class="blog-card">
+        <div class="card-header">
+          <span class="tag structure-tag">Structure</span>
+          <span class="date">Day 03</span>
+        </div>
+        <h3>Semantic HTML & Structuring the Chaos</h3>
+        <p>No more soup of random divs! Learned about `<header>`, `<main>`, `<article>`, and forms today. Accessibility matters, and giving content real meaning makes the codebase feel so much more organized and professional.</p>
+        <div class="card-footer">
+          <span class="read-time">⏳ 3 min read</span>
+          <a href="#" class="read-more">Read Entry →</a>
+        </div>
+      </article>
+
+      <!-- Day 5 Post (Highlighted!) -->
+      <article class="blog-card featured-card">
+        <div class="featured-badge">🌟 Latest Glow-Up</div>
+        <div class="card-header">
+          <span class="tag css-tag">CSS Magic</span>
+          <span class="date">Day 05</span>
+        </div>
+        <h3>Why Centering a Div Feels Like Sorcery 🪄</h3>
+        <p>Today changed everything. Introduced to CSS, Flexbox, and CSS Grid! Finally added custom color palettes, hover animations, and modern cards. This very blog layout is the proof of today's progress. I'm officially obsessed!</p>
+        <div class="card-footer">
+          <span class="read-time">⏳ 5 min read</span>
+          <a href="#" class="read-more">Read Entry →</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Built with HTML5, CSS3, and ☕ by a future Full-Stack Developer.</p>
+    <p class="footer-sub">Follow my daily commits on <a href="https://github.com" target="_blank">GitHub</a></p>
+  </footer>
+
+  <!-- Inline JavaScript Tag (No external file needed yet!) -->
+  <script>
+    /* My Day 5 interactive script for a cute cheer counter! */
+    const cheerBtn = document.getElementById('cheer-btn');
+    const cheerCountSpan = document.getElementById('cheer-count');
+    
+    let count = 24; // Starting at 24 cheers
+
+    cheerBtn.addEventListener('click', () => {
+      count++;
+      cheerCountSpan.textContent = count;
+      
+      // Little alert to show interactivity!
+      cheerBtn.style.transform = 'scale(1.1)';
+      setTimeout(() => {
+        cheerBtn.style.transform = 'scale(1)';
+      }, 150);
+      
+      console.log("Thank you for cheering my CSS journey! 🌸");
+    });
+  </script>
+
+</body>
+</html>
