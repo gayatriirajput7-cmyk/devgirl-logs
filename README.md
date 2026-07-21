@@ -29,8 +29,11 @@ Instead of a generic practice page, I wanted to build something real that tracks
 * **JavaScript:** DOM manipulation (Interactive cheer widget)
 
 ## 📁 Project Structure
-```text
+
 📦 day5-dev-diary
  ┣ 📜 index.html    # Semantic structure & inline JS interactive widget
  ┣ 📜 style.css     # Advanced styling, CSS grid, & custom aesthetics
  ┗ 📜 README.md     # Project documentation
+
+To check live demo click bellow:
+ https://gayatriirajput7-cmyk.github.io/devgirl-logs/
